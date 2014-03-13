@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.author          = { "Segment.io" => "friends@segment.io" }
   s.source          = { :git => 'https://github.com/ozinc/analytics-ios.git' }
   s.platform        = :ios, "6.0"
-  s.preserve_paths  = "Analytics.framework"
-  s.source_files    = "Analytics.framework/**/*.h"
+  s.source_files    = "Analytics/**/*.{h,m,c}"
   s.resources       = ["Analytics.framework/Versions/A/Resources/*"]
   s.frameworks      = "Analytics", "Foundation", "UIKit", "CoreData", "SystemConfiguration", 
                       "QuartzCore", "CFNetwork", "CoreTelephony", "Security", "CoreGraphics"
