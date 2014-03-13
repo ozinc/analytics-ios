@@ -5,8 +5,7 @@ Pod::Spec.new do |s|
   s.homepage        = "https://segment.io/libraries/ios"
   s.license         = { :type => "MIT", :file => "License.md" }
   s.author          = { "Segment.io" => "friends@segment.io" }
-  s.source          = { :http => "https://s3.amazonaws.com/segmentio/releases/ios/Analytics-#{s.version}.zip", 
-                        :flatten => true }
+  s.source          = { :git => 'https://github.com/ozinc/analytics-ios.git' }
   s.platform        = :ios, "6.0"
   s.preserve_paths  = "Analytics.framework"
   s.source_files    = "Analytics.framework/**/*.h"
